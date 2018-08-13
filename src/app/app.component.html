@@ -3,16 +3,16 @@
     <div class="col-sm-6 col-sm-offset-3">
 
       <h1 class="text-center">
-          {{title}}
+        {{title}}
       </h1>
       <div class="todo-list">
         <form>
           <div class="input-group">
 
-            <input type="text" class="form-control" placeholder="Search for...">
+            <input type="text" class="form-control" placeholder="Search for..." [(ngModel)]="newItem">
             <span class="input-group-btn ">
-            <button class="btn btn-primary " type="submit">Add</button>
-          </span>
+              <button class="btn btn-primary " type="submit" (click)= "addTodo()">Add</button>
+            </span>
 
           </div>
         </form>
